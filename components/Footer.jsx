@@ -21,11 +21,15 @@ export default function Footer() {
         <div>
           <h2 className="text-center text-4xl text-white">SHARE</h2>
           <div className="flex flex-row justify-center mt-4">
-            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-              <AiFillTwitterCircle size={55} color={"#00ABE5"} className="cursor-pointer" />
+            <Link href="https://twitter.com/">
+              <a target="_blank">
+                <AiFillTwitterCircle size={55} color={"#00ABE5"} className="cursor-pointer" />
+              </a>
             </Link>
-            <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <MdFacebook size={55} color={"#3266AB"} className="cursor-pointer"/>
+            <Link href="https://www.facebook.com/">
+              <a target="_blank">
+                <MdFacebook size={55} color={"#3266AB"} className="cursor-pointer"/>
+              </a>
             </Link>
           </div>
         </div>
