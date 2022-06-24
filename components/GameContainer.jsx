@@ -61,7 +61,7 @@ export default function GameContainer() {
 
   return (
     <>
-      <div className="bg-[#F8F5EF] w-full md:mt-10 mt-6">
+      <div className="bg-[#F8F5EF] w-full mt-10">
         <div className="mx-auto mb-6 w-44 h-[14rem] bg-white rounded-xl border-8 border-[#C2E0E8] flex justify-center">
           <h2 className="text-[#58A9D2] text-8xl font-body text-center select-none flex my-auto">
             {quizKanji}
