@@ -17,7 +17,7 @@ export default function Home() {
         </Head>
         <Header />
         <Main />
-        <div className="w-[80%] mx-auto grid gap-5 justify-evenly lg:grid-cols-5 md:grid-cols-3 grid-cols-2 justify-items-center">
+        <div className="w-[80%] mx-auto grid gap-5 justify-evenly lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:justify-items-center">
           {fishData.map((fish) => {
             return (
               <Card id={fish.id} kanji={fish.kanji} readings={fish.readings} />
