@@ -38,7 +38,6 @@ export default function GameContainer() {
 
   // const [result,setResult] = useState(false);
   const judge = (e) => {
-    console.log(e);
     if(e == rand) {
       alert("正解！おめでとうございます！");
       router.push("/game");
