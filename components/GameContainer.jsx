@@ -32,15 +32,16 @@ export default function GameContainer() {
   const answersShuffle = shuffle(answers);
 
   const router = useRouter();
-  const againClick = () => {
-    router.push("/game");
-  }
+  // const againClick = () => {
+  //   router.push("/game");
+  // }
 
   // const [result,setResult] = useState(false);
   const judge = (e) => {
     console.log(e);
     if(e == rand) {
       alert("正解！おめでとうございます！");
+      router.push("/game");
     } else {
       alert("違いますよ！");
     }
@@ -72,7 +73,7 @@ export default function GameContainer() {
           <div className="md:w-[35%] mx-auto flex flex-col w-[80%]">
             {options}
           </div>
-          <button onClick={() => {againClick()}} className="bg-[#C2E0E8] rounded-xl md:w-[35%] mx-auto w-[80%] justify-center py-4 text-white font-body cursor-pointer text-xl hover:bg-[#58A9D2]">もう一回！</button>
+          {/* <button onClick={() => {againClick()}} className="bg-[#C2E0E8] rounded-xl md:w-[35%] mx-auto w-[80%] justify-center py-4 text-white font-body cursor-pointer text-xl hover:bg-[#58A9D2]">もう一回！</button> */}
         </div>
       </div>
     </>
