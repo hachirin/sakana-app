@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function Header() {
   return (
     <>
-      <div className="w-full flex flex-row justify-between px-14 h-34">
+      <div className="w-full flex flex-row justify-between md:px-14 h-34 px-6">
         {/* pc用ロゴ */}
         <div className="md:flex hidden flex-row">
           <Link href={"/"}>

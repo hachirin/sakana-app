@@ -60,7 +60,7 @@ export default function GameContainer() {
 
   return (
     <>
-      <div className="bg-[#F8F5EF] w-full mt-10">
+      <div className="bg-[#F8F5EF] w-full md:mt-10 mt-6">
         <div className="mx-auto mb-6 w-44 h-[14rem] bg-white rounded-xl border-8 border-[#C2E0E8] flex justify-center">
           <h2 className="text-[#58A9D2] text-8xl font-body text-center select-none flex my-auto">
             {quizKanji}
@@ -68,7 +68,7 @@ export default function GameContainer() {
         </div>
         
         <div className="w-[50%] mx-auto flex flex-col">
-          <h3 className="font-body text-[#58A9D2] text-center text-xl mb-6">Q.この漢字の読み方は？</h3>
+          <h3 className="font-body text-[#58A9D2] text-center md:text-xl mb-6 text-sm">Q.この漢字の読み方は？</h3>
           <div className="md:w-[35%] mx-auto flex flex-col w-[80%]">
             {options}
           </div>
