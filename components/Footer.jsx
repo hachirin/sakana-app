@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="relative mt-24 bg-[#A1D0DC]">
+    <div className="relative md:mt-32 bg-[#A1D0DC] mt-20">
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-[#A1D0DC]"
         preserveAspectRatio="none"

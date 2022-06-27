@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import Card from "../components/Card";
 import FishInfo from "../models/FishInfo";
 import Footer from "../components/Footer";
+import ReturnToTopBtn from "../components/ReturnToTop";
 
 export default function Home() {
   const fishData = FishInfo.FishInfoData;
@@ -23,6 +24,9 @@ export default function Home() {
               <Card id={fish.id} kanji={fish.kanji} readings={fish.readings} />
             );
           })}
+        </div>
+        <div className="flex lg:float-right lg:mr-20 mt-3 mx-auto justify-center">
+          <ReturnToTopBtn />
         </div>
         <Footer />
       </div>
